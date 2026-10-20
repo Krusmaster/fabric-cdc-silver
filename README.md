@@ -51,6 +51,15 @@ not exist. If it exists with its second-to-last value, you read the log as a tab
 
 Contract logic is pure Python. The Spark path is tested with local PySpark in CI and in Fabric.
 
+## Works on
+
+| Platform | Status |
+| --- | --- |
+| Fabric | yes |
+| Databricks | yes — plain PySpark, no Fabric-specific calls |
+| Snowflake | no (Snowpark port not written — open an issue if you need it) |
+| Local Python | contracts yes; `to_silver` with local PySpark |
+
 ## License
 
 MIT
